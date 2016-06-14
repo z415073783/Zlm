@@ -15,6 +15,11 @@
 		48E034281D102D2B006F535D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E034261D102D2B006F535D /* LaunchScreen.storyboard */; };
 		48E034331D102D2B006F535D /* ZlmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E034321D102D2B006F535D /* ZlmTests.m */; };
 		48E0343E1D102D2B006F535D /* ZlmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0343D1D102D2B006F535D /* ZlmUITests.m */; };
+		48E034501D102DBF006F535D /* ZlmSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0344D1D102DBF006F535D /* ZlmSlideView.m */; };
+		48E034561D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E034531D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.m */; };
+		48E034571D102DD0006F535D /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E034551D102DD0006F535D /* UIView+SDAutoLayout.m */; };
+		48E0345C1D10395D006F535D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0345A1D10395D006F535D /* BaseViewController.m */; };
+		48E0345D1D10395D006F535D /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E0345B1D10395D006F535D /* BaseViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		48E034391D102D2B006F535D /* ZlmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZlmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E0343D1D102D2B006F535D /* ZlmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZlmUITests.m; sourceTree = "<group>"; };
 		48E0343F1D102D2B006F535D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E0344C1D102DBF006F535D /* ZlmSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZlmSlideView.h; sourceTree = "<group>"; };
+		48E0344D1D102DBF006F535D /* ZlmSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZlmSlideView.m; sourceTree = "<group>"; };
+		48E034521D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		48E034531D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		48E034541D102DD0006F535D /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		48E034551D102DD0006F535D /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		48E034581D102DEB006F535D /* Zlm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Zlm-Prefix.pch"; sourceTree = "<group>"; };
+		48E034591D10395D006F535D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		48E0345A1D10395D006F535D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		48E0345B1D10395D006F535D /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,9 @@
 		48E034171D102D2B006F535D /* Zlm */ = {
 			isa = PBXGroup;
 			children = (
+				48E0344B1D102DBF006F535D /* CustomClass */,
+				48E0344E1D102DBF006F535D /* TargetManager */,
+				48E0344F1D102DBF006F535D /* ThreeClass */,
 				48E0341B1D102D2B006F535D /* AppDelegate.h */,
 				48E0341C1D102D2B006F535D /* AppDelegate.m */,
 				48E0341E1D102D2B006F535D /* ViewController.h */,
@@ -110,6 +128,9 @@
 				48E034261D102D2B006F535D /* LaunchScreen.storyboard */,
 				48E034291D102D2B006F535D /* Info.plist */,
 				48E034181D102D2B006F535D /* Supporting Files */,
+				48E034591D10395D006F535D /* BaseViewController.h */,
+				48E0345A1D10395D006F535D /* BaseViewController.m */,
+				48E0345B1D10395D006F535D /* BaseViewController.xib */,
 			);
 			path = Zlm;
 			sourceTree = "<group>";
@@ -118,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				48E034191D102D2B006F535D /* main.m */,
+				48E034581D102DEB006F535D /* Zlm-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +160,41 @@
 				48E0343F1D102D2B006F535D /* Info.plist */,
 			);
 			path = ZlmUITests;
+			sourceTree = "<group>";
+		};
+		48E0344B1D102DBF006F535D /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				48E0344C1D102DBF006F535D /* ZlmSlideView.h */,
+				48E0344D1D102DBF006F535D /* ZlmSlideView.m */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		48E0344E1D102DBF006F535D /* TargetManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TargetManager;
+			sourceTree = "<group>";
+		};
+		48E0344F1D102DBF006F535D /* ThreeClass */ = {
+			isa = PBXGroup;
+			children = (
+				48E034511D102DD0006F535D /* SDAutoLayout */,
+			);
+			path = ThreeClass;
+			sourceTree = "<group>";
+		};
+		48E034511D102DD0006F535D /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				48E034521D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.h */,
+				48E034531D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.m */,
+				48E034541D102DD0006F535D /* UIView+SDAutoLayout.h */,
+				48E034551D102DD0006F535D /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +264,7 @@
 				TargetAttributes = {
 					48E034141D102D2A006F535D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = K8KKN2L2KK;
 					};
 					48E0342D1D102D2B006F535D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E034281D102D2B006F535D /* LaunchScreen.storyboard in Resources */,
+				48E0345D1D10395D006F535D /* BaseViewController.xib in Resources */,
 				48E034251D102D2B006F535D /* Assets.xcassets in Resources */,
 				48E034231D102D2B006F535D /* Main.storyboard in Resources */,
 			);
@@ -270,9 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E034501D102DBF006F535D /* ZlmSlideView.m in Sources */,
 				48E034201D102D2B006F535D /* ViewController.m in Sources */,
+				48E034571D102DD0006F535D /* UIView+SDAutoLayout.m in Sources */,
 				48E0341D1D102D2B006F535D /* AppDelegate.m in Sources */,
 				48E0341A1D102D2B006F535D /* main.m in Sources */,
+				48E0345C1D10395D006F535D /* BaseViewController.m in Sources */,
+				48E034561D102DD0006F535D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +478,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "Zlm/Zlm-Prefix.pch";
 				INFOPLIST_FILE = Zlm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlm.Zlm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +492,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "Zlm/Zlm-Prefix.pch";
 				INFOPLIST_FILE = Zlm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlm.Zlm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
