@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-
+#import "ZlmSlideView.h"
 @interface BaseViewController ()
 
 @end
@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    ZlmSlideView* slideView = [[ZlmSlideView alloc]init];
+    [self.view addSubview:slideView];
+    slideView.sd_layout.leftSpaceToView(self.view,20).topSpaceToView(self.view,60).heightRatioToView(self.view,0.5).rightSpaceToView(self.view,60);
+    [slideView setBackgroundColor:[UIColor lightGrayColor]];
+    
+    UILabel* label = [UILabel new];
+    [slideView addSubview:label];
+    [label setSingleLineAutoResizeWithMaxWidth:4000];
+    label.sd_layout.centerXEqualToView(slideView);
+    [label setText:@"987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9987654321小倩小9"];
 }
 
 - (void)didReceiveMemoryWarning {

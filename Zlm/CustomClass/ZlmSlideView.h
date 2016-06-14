@@ -19,8 +19,11 @@ typedef enum
     
 }
 @property UIView* container;
+@property CGSize containerLayoutSize;
 @property SlideActionDirection direction;
+@property float rate;
+@property BOOL isContinue;
 //-(void)
 -(void)addSubview:(UIView *)view;
--(void)beginAction;
+//-(void)beginAction;
 @end
